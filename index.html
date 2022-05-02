@@ -54,20 +54,38 @@
 
   <ol>
      <li>
-       page 지시어 : 현재의 jsp 페이지를 처리하는데 필요한 각종 속성들을 기술하는 부분<br>     
+       page 지시어 : 현재의 jsp 페이지를 처리하는데 필요한 각종 속성들을 기술하는 부분<br> 
+       <ul>
+          <li>language : 사용할 스크립트 언어 유형을 지정 </li>
+          <li>contentType : 웹 브라우저가 받아 볼 해당 페이지의 형식, 인코딩 방식 지정  </li>
+          <li>pageEncoding : jsp 파일에 기록된 자바 코드의 인코딩 방식을 지정 </li>
+          <li>import : 자바에서의 import 와 같은 의미 </li>
+          <li>errorPage : 해당 jsp 상에서 오류가 발생했을 때 보여줄 에러페이지의 경로 지정 </li>
+       </ul>
+       <a href="views/02_DirectivePage.jsp">View detail &raquo;</a>
+       
+           
      </li>
      <li>
        include 지시어 : jsp 파일에 또 다른 jsp 파일을 포함시키고자 할 때 사용하는 지시어 <br> 
        => header, footer 은 홈페이지에 붙박이다(바뀌지 않는다)
        => 이것을 따로 만들어놓고 include로 만들어놓고 불러낸다
+       <a href="views/03_DirectiveInclude.jsp">View detail &raquo;</a>
+       
      </li>
      <li>
       taglib 지시어: jsp 기능을 좀 더 확장시킬 수 있는 인자로
                                     추가적인 라이브러리를 등록할 수 있는 구문 <br>  
      => 선배개발자들이 만들어놓은것을 호출하는 것                                
-     </li>
-     
+     </li>     
   </ol>
+   
+   <hr>
+   
+   <h2>피자 주문페이지(jsp) : 주문요청 --> 주문 요청을 받아서 처리해주는 Servlet --> 결제페이지(응답 jsp) </h2>
+  
+   <a href="views/04_PizzaOrderForm.jsp">피자 주문하러 가기 &raquo;</a>
+  
 </body>
 </html>
 
